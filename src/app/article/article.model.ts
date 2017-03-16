@@ -20,6 +20,7 @@ export class Article {
 	domain(): string {
 		try {
 			const link: string = this.link.split('//')[1];
+			console.log(`Link = ` + this.link);
 			return link.split('/')[0];
 		} catch (err) {
 			return null;
